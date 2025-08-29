@@ -17,9 +17,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerStyle: { backgroundColor: '#0b0b0c' },
+          headerStyle: { backgroundColor: '#0c1843' }, // 👈 bleu identique au fond
           headerTintColor: '#fff',
-          contentStyle: { backgroundColor: '#0b0b0c' },
+          headerTitleAlign: 'center',
+          headerTitleStyle: { fontWeight: '800', fontSize: 20 },
+          contentStyle: { backgroundColor: '#0c1843' }, // 👈 optionnel
         }}
       >
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Ça Sort !' }} />
